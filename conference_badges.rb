@@ -9,12 +9,11 @@ def batch_badge_creator(attendees)
 end
 
 def assign_rooms(attendees)
-  attendees.each_with_index do |item, index|
-    puts "Hello, #{item}! You'll be assigned to room #{index + 1}!"
+  attendees.each_with_index do |attendee, index|
+    "Hello, #{attendee}! You'll be assigned to room #{index + 1}!"
   end
-  room_assignments
 end
 
 def printer
-  puts badges_and_room_assignments
+  puts
 end
