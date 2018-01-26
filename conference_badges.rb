@@ -1,3 +1,5 @@
+attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+
 def badge_maker(name)
   "Hello, my name is #{name}."
 end
@@ -17,11 +19,11 @@ def assign_rooms(attendees)
   list_of_room_assignments
 end
 
-def printer(attendees)
-  batch_badge_creator.each do |attendee|
+def printer
+  attendees.each do |attendee|
     puts "Hello, my name is #{attendee}."
   end
-  assign_rooms.each do |attendee, index|
+  attendees.each do |attendee, index|
     puts "Hello, #{attendee}! You'll be assigned to room #{index + 1}!"
   end
 end
